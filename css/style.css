@@ -17,11 +17,12 @@ header{
     background: rgba(0,0,0,0.8);
 }
 nav{
-    position: fixed;
+    /* position: fixed;
     left: 0;
-    top: 0;
-    height: 60px;
+    top: 0; */
+    height: 50px;
     width: 100%;
+    padding: 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
