@@ -17,9 +17,6 @@ header{
     background: rgba(0,0,0,0.8);
 }
 nav{
-    /* position: fixed;
-    left: 0;
-    top: 0; */
     height: 50px;
     width: 100%;
     padding: 15px 0;
@@ -137,6 +134,7 @@ button{
 }
 .content-bx{
     display: flex;
+    flex-wrap: wrap;
     padding:0 200px;
     /* background: lightgray; */
 }
@@ -178,9 +176,10 @@ button{
    /* align-items: center; */
 }
 .work-bx .img{
+    width: 300px;;
     padding: 30px;
     background: orange;
-    margin: 10px;
+    margin: 30px;
 
 }
 .work-bx .img img{
@@ -271,7 +270,56 @@ footer p span a{
     color: rgba(0, 255, 0);
 }
 
-@media screen and (max-width:520px){
+/* resposive code */
+
+@media screen and (max-width:1024px){
+    .welcome{
+        height: 100%;
+        width: 80%;
+    }
+    .contact{
+        width: 65%;
+    }
+    .content-bx{
+        align-items: center;
+        padding:0 100px;
+    }
+}
+@media screen and (max-width:900px){
+    .work-bx .img{
+        width: 200px;;
+        padding: 30px;
+        background: orange;
+        margin: 30px;
+    
+    }
+}
+@media screen and (max-width:720px){
+    .welcome{
+        height: 100%;
+        width: 80%;
+    }
+    .content-bx{
+        padding:0 40px;
+    }
+    .work-bx .img{
+        width: 350px;;
+        padding: 30px;
+        background: orange;
+        margin: 10px;
+    
+    }
+    .contact{
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width:620px){
+    header{
+        width: 100%;
+        height: 100vh;
+    }
     nav{
         flex-direction: column;
     }
@@ -285,59 +333,64 @@ footer p span a{
         padding: 20px;
     }
     .content-bx .left-side{
-        min-height :300px;
+        /* min-height :300px;
         max-height: 400px;
-        width: 90%;
-        background: blueviolet;
+        width: 100%; */
     }
     .content-bx .left-side img{
-        min-height :300px;
+        /* min-height :300px;
         max-height: 400px;
-        width: 100%;
+        width: 100%; */
     }
     .content-bx .right-side{
         width: 90%;
     }
     .contact{
-        width: 70%;
+        width: 75%;
     }
 }
-@media screen and (max-width:400px){
-    .welcome{
-        height: 100%;
-        width: 100%;
-}
-}
-@media screen and (max-width:320px){
-    .welcome{
-        height: 100%;
-        width: 100%;
-}
-}
-@media screen and (max-width:720px){
-    .welcome{
-        height: 100%;
-        width: 80%;
-    }
-    .contact{
-        width: 70%;
+@media screen and (max-width:560px){
+    nav{
+       flex-direction: column;
     }
     .content-bx{
+        padding:0;
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        padding: 20px;
     }
-}
-@media screen and (max-width:850px){
-    .welcome{
-        height: 100%;
-        width: 80%;
+    .content-bx .left-side{
+        display: flex;
+        justify-content: center;
+        min-height :300px;
+        max-height: 400px;
+        width: 100%;
+        /* border: 1px solid; */
+    }
+    .content-bx .left-side img {
+        min-height: 300px;
+        max-height: 400px;
     }
     .contact{
-        width: 60%;
+        width: 80%;
     }
-    .content-bx{
-        align-items: center;
-        padding:0 50px;
+}
+@media screen and (max-width:500px){
+    .welcome{
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+    }
+    header{
+        width: 100%;
+        height: 800px;
+        background: url(../images/injection-die-casting.jpg);
+    }
+    .header-bg{
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,0.8);
+    }
+    .contact{
+        width: 85%;
     }
 }
